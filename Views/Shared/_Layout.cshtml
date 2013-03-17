@@ -10,12 +10,14 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        @Styles.Render("~/bundles/css")
-        <script src='@Scripts.Url("~/bundles/modernizr")' async> </script>
+        @Styles.Render("~/Content/Less/site.less")
+        @RenderSection("Styles", required: false)
+
+        @Scripts.Render("~/Scripts/libs/modernizr-2.6.2-respond-1.1.0.min.js")
 
         <!--[if lt IE 9]>
-                        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-                    <![endif]-->
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
@@ -27,7 +29,7 @@
 <body>
     <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
     @RenderSection("PreScripts", required: false)
-
+    @Html.Partial("_Modal")
     <header>
         @RenderPage("~/Views/Shared/_Header.cshtml")
     </header>
@@ -40,18 +42,20 @@
         @RenderPage("~/Views/Shared/_Footer.cshtml")
     </footer>
 
-    @Scripts.Render("//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
-    <script>window.jQuery || document.write('<script src="Scripts/libs/jquery-1.8.2.min.js"><\/script>')</script>
-    @Scripts.Render("~/bundles/scripts")
+    @Scripts.Render("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    <script>window.jQuery || document.write('<script src="Scripts/libs/jquery-1.9.1.min.js"><\/script>')</script>
+    @Scripts.Render("~/Scripts/libs/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/main.js")
+    @Scripts.Render("~/Scripts/plugins.js")
     @RenderSection("PostScripts", required: false)
 
     <!-- UNCOMMENT FOR GOOGLE ANALYTICS
         <script>
-	                    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-	                    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	                    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	                    s.parentNode.insertBefore(g,s)}(document,'script'));
-                        </script>
-        -->
+	        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	        s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    -->
     </body>
 </html>
