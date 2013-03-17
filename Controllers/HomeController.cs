@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace InitializrBootstrap.Controllers
 {
@@ -12,6 +8,20 @@ namespace InitializrBootstrap.Controllers
         // GET: /Home/
 
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        // GET: /Home/
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        // GET: /Home/
+
+        public ActionResult Contact()
         {
             return View();
         }
