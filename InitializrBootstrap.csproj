@@ -153,18 +153,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Application\Bootstrappers\Bootstrapper.ActionFilters.cs" />
+    <Compile Include="Application\Bootstrappers\Bootstrapper.Routes.cs" />
+    <Compile Include="Application\Bootstrappers\Bootstrapper.WebApi.cs" />
+    <Compile Include="Application\MvcApplication.ApplicationError.cs" />
+    <Compile Include="Application\MvcApplication.ApplicationStart.cs" />
+    <Compile Include="Application\MvcApplication.SessionStart.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\Sitemap\BootstrapHelpers.cs" />
     <Compile Include="Extensions\Sitemap\BreadcrumbExtensions.cs" />
     <Compile Include="Extensions\Sitemap\NavExtensions.cs" />
     <Compile Include="Extensions\Sitemap\PillsExtensions.cs" />
     <Compile Include="Extensions\Sitemap\TabsExtensions.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-      <SubType>
-      </SubType>
-    </Compile>
     <Compile Include="Models\Sitemap\BreadcrumbHelperModel.cs" />
     <Compile Include="Models\Sitemap\NavHelperModel.cs" />
     <Compile Include="Models\Sitemap\PillsHelperModel.cs" />
@@ -172,14 +173,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\FilterConfig.cs">
-      <SubType>
-      </SubType>
-    </Compile>
-    <Compile Include="App_Start\RouteConfig.cs">
-      <SubType>
-      </SubType>
-    </Compile>
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="404.html" />
@@ -305,24 +298,6 @@
     <Content Include="Views\Shared\_Modal.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -335,6 +310,9 @@
     <Content Include="Views\Shared\DisplayTemplates\Sitemap\Nav.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Sitemap\Pills.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Sitemap\Tabs.cshtml" />
+    <Content Include="Views\Error\AccessDenied.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

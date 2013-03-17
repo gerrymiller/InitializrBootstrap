@@ -1,4 +1,9 @@
-Updates at 2013-03-17 (vcardins)
+Update 2 - 2013-03-17 (vcardins)
+-------------------------------------------------------------------------
+- Added MvcSiteMap for navigation
+- Minor fixes 
+
+Update 1 - 2013-03-17 (vcardins)
 -------------------------------------------------------------------------
 
 - Added latest InitializrBootstrap version, includes

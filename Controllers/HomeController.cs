@@ -2,6 +2,7 @@
 
 namespace InitializrBootstrap.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         //
