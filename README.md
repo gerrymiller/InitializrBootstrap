@@ -1,6 +1,8 @@
 Update 2 - 2013-03-17 (vcardins)
 -------------------------------------------------------------------------
 - Added MvcSiteMap for navigation
+- Added an error handler system with fancy custom view
+- Redesigned Global.asax for better maintenance by splitting it into partial classes under Application folder 
 - Minor fixes 
 
 Update 1 - 2013-03-17 (vcardins)
