@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="InitializrBootstrap.MvcApplication" Language="C#" %>
+﻿<%@ Application Inherits="InitializrBootstrap.Application.MvcApplication" Language="C#" %>

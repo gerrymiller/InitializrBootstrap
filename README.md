@@ -1,4 +1,30 @@
-﻿INTRODUCTION
+Update 2 - 2013-03-17 (vcardins)
+-------------------------------------------------------------------------
+- Added MvcSiteMap for navigation
+- Added an error handler system with fancy custom view
+- Redesigned Global.asax for better maintenance by splitting it into partial classes under Application folder 
+- Minor fixes 
+
+Update 1 - 2013-03-17 (vcardins)
+-------------------------------------------------------------------------
+
+- Added latest InitializrBootstrap version, includes
+  - jQuery 1.9.1
+  - Twitter Bootstrap 2.3.0
+  - Modernizr 2.6.2
+- Added FontAwesome
+- Css files replaced by Less 
+- Added RequestReduce framework for js and css compression
+- Added a bootstrap modal window partial view
+
+Obs: it is needed to install some packages:
+a. Install-Package Newtonsoft.Json
+b. Install-Package Microsoft.AspNet.Web.Optimization
+c. Install-Package RequestReduce.SassLessCoffee
+
+..
+
+INTRODUCTION
 
 Hello and welcome to the MVC4 version of Initializr Bootstrap.  Bootstrap is
 a "Sleek, intuitive, and powerful front-end framework for faster and easier
@@ -62,3 +88,4 @@ Gerry Miller (gerry@gerrymiller.com)
 Muse Holdings, LLC
 Royal Oak, Michigan, USA
 http://www.gerrymiller.com
+
