@@ -1,3 +1,22 @@
+Updates on 2013-03-17 (vcardins)
+-------------------------------------------------------------------------
+
+- Added latest InitializrBootstrap version, includes
+  - jQuery 1.9.1
+  - Twitter Bootstrap 2.3.0
+  - Modernizr 2.6.2
+- Added FontAwesome
+- Css files replaced by Less 
+- Added RequestReduce framework for js and css compression
+- Added a bootstrap modal window partial view
+
+Obs: it is needed to install some packages:
+a. Install-Package Newtonsoft.Json
+b. Install-Package Microsoft.AspNet.Web.Optimization
+c. Install-Package RequestReduce.SassLessCoffee
+
+..
+
 INTRODUCTION
 
 Hello and welcome to the MVC4 version of Initializr Bootstrap.  Bootstrap is
@@ -63,21 +82,3 @@ Muse Holdings, LLC
 Royal Oak, Michigan, USA
 http://www.gerrymiller.com
 
-Updates (vcardins)
--------------------------------------------------------------------------
-
-Commit 1
-
-- Added latest InitializrBootstrap version, includes
-  - jQuery 1.9.1
-  - Twitter Bootstrap 2.3.0
-  - Modernizr 2.6.2
-- Added FontAwesome
-- Css files replaced by Less 
-- Added RequestReduce framework for js and css compression
-- Added a bootstrap modal window partial view
-
-Obs: it is needed to install some packages:
-a. Install-Package Newtonsoft.Json
-b. Install-Package Microsoft.AspNet.Web.Optimization
-c. Install-Package RequestReduce.SassLessCoffee
